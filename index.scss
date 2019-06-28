@@ -22,11 +22,11 @@ body {
         text-align: center;
 
         .title {
-            width: 150px;
+            width: 35%;
             height: auto;
             position: relative;
-            top: 125px;
-            left: 15%;
+            top: 200px;
+            margin-left: 15%;
         }
     
         .bannerBG {
@@ -36,24 +36,25 @@ body {
             background: $primeLtRed;
             transform: skewY(20deg);
             margin-left: 10%;
-            margin-top: -20%;
+            margin-top: -10%;
         }
     }
 
     #intro-container {
-        width: 350px;
+        width: 500px;
         height: auto;
         margin-left: 50%;
         margin-top: 2%;
 
         .intro-header {
             color: $accentLtBlue;
-            font-size: 5em;
+            font-size: 7em;
         }
 
         .intro-text {
             color: $accentShadowGrey;
-            line-height: 25px;
+            font-size: 1.5em;
+            line-height: 35px;
         }
     }
 
@@ -65,9 +66,9 @@ body {
 
         .menu-item {
             margin: 0 auto;
-
+            
             .menu-pic {
-                width: 60%;
+                width: 70%;
                 height: auto;
             }
         }

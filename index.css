@@ -9,11 +9,11 @@ body #jiggybanner {
 }
 
 body #jiggybanner .title {
-  width: 150px;
+  width: 35%;
   height: auto;
   position: relative;
-  top: 125px;
-  left: 15%;
+  top: 200px;
+  margin-left: 15%;
 }
 
 body #jiggybanner .bannerBG {
@@ -24,11 +24,11 @@ body #jiggybanner .bannerBG {
   -webkit-transform: skewY(20deg);
           transform: skewY(20deg);
   margin-left: 10%;
-  margin-top: -20%;
+  margin-top: -10%;
 }
 
 body #intro-container {
-  width: 350px;
+  width: 500px;
   height: auto;
   margin-left: 50%;
   margin-top: 2%;
@@ -36,12 +36,13 @@ body #intro-container {
 
 body #intro-container .intro-header {
   color: #B1E1F2;
-  font-size: 5em;
+  font-size: 7em;
 }
 
 body #intro-container .intro-text {
   color: #86A1AD;
-  line-height: 25px;
+  font-size: 1.5em;
+  line-height: 35px;
 }
 
 body .main-menu {
@@ -58,7 +59,7 @@ body .main-menu .menu-item {
 }
 
 body .main-menu .menu-item .menu-pic {
-  width: 60%;
+  width: 70%;
   height: auto;
 }
 /*# sourceMappingURL=index.css.map */
