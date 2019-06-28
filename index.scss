@@ -1,0 +1,75 @@
+$primeDkRed: #7A1818;
+$primeMedRed: #CC5a5a;
+$primeLtRed: #FFF0FC;
+
+$accentPurple: #894670;
+$accentDkBlue: #38839E; 
+$accentLtBlue: #B1E1F2;
+$accentLtGrey: #EAEAEA;
+
+$shadowDkRed: #541515;
+$shadowLtRed: #C69DC6;
+
+$accentShadowGrey: #86A1AD;
+
+body {
+
+    font-family: "Gibson", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+    #jiggybanner {
+        width: 33%;
+        text-align: center;
+
+        .title {
+            width: 150px;
+            height: auto;
+            position: relative;
+            top: 125px;
+            left: 15%;
+        }
+    
+        .bannerBG {
+            position: absolute;
+            width: 250px;
+            height: 500px;
+            background: $primeLtRed;
+            transform: skewY(20deg);
+            margin-left: 10%;
+            margin-top: -20%;
+        }
+    }
+
+    #intro-container {
+        width: 350px;
+        height: auto;
+        margin-left: 50%;
+        margin-top: 2%;
+
+        .intro-header {
+            color: $accentLtBlue;
+            font-size: 5em;
+        }
+
+        .intro-text {
+            color: $accentShadowGrey;
+            line-height: 25px;
+        }
+    }
+
+    .main-menu {
+        display: flex;
+        width: 50%;
+        margin-left: 10%;
+        margin-top: 5%;
+
+        .menu-item {
+            margin: 0 auto;
+
+            .menu-pic {
+                width: 60%;
+                height: auto;
+            }
+        }
+    }
+}

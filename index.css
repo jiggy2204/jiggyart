@@ -1,0 +1,64 @@
+body {
+  font-family: "Gibson", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+}
+
+body #jiggybanner {
+  width: 33%;
+  text-align: center;
+}
+
+body #jiggybanner .title {
+  width: 150px;
+  height: auto;
+  position: relative;
+  top: 125px;
+  left: 15%;
+}
+
+body #jiggybanner .bannerBG {
+  position: absolute;
+  width: 250px;
+  height: 500px;
+  background: #FFF0FC;
+  -webkit-transform: skewY(20deg);
+          transform: skewY(20deg);
+  margin-left: 10%;
+  margin-top: -20%;
+}
+
+body #intro-container {
+  width: 350px;
+  height: auto;
+  margin-left: 50%;
+  margin-top: 2%;
+}
+
+body #intro-container .intro-header {
+  color: #B1E1F2;
+  font-size: 5em;
+}
+
+body #intro-container .intro-text {
+  color: #86A1AD;
+  line-height: 25px;
+}
+
+body .main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  margin-left: 10%;
+  margin-top: 5%;
+}
+
+body .main-menu .menu-item {
+  margin: 0 auto;
+}
+
+body .main-menu .menu-item .menu-pic {
+  width: 60%;
+  height: auto;
+}
+/*# sourceMappingURL=index.css.map */
