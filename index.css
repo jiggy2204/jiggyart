@@ -3,12 +3,12 @@ body {
   font-size: 16px;
 }
 
-body #jiggybanner {
+body #mainpage #jiggybanner {
   width: 33%;
   text-align: center;
 }
 
-body #jiggybanner .title {
+body #mainpage #jiggybanner .title {
   width: 35%;
   height: auto;
   position: relative;
@@ -16,7 +16,7 @@ body #jiggybanner .title {
   margin-left: 15%;
 }
 
-body #jiggybanner .bannerBG {
+body #mainpage #jiggybanner .bannerBG {
   position: absolute;
   width: 250px;
   height: 500px;
@@ -27,39 +27,92 @@ body #jiggybanner .bannerBG {
   margin-top: -10%;
 }
 
-body #intro-container {
+body #mainpage #intro-container {
   width: 500px;
   height: auto;
   margin-left: 50%;
   margin-top: 2%;
 }
 
-body #intro-container .intro-header {
+body #mainpage #intro-container .intro-header {
   color: #B1E1F2;
   font-size: 7em;
 }
 
-body #intro-container .intro-text {
+body #mainpage #intro-container .intro-text {
   color: #86A1AD;
   font-size: 1.5em;
   line-height: 35px;
 }
 
-body .main-menu {
+body #mainpage .main-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 100%;
   margin-left: 10%;
-  margin-top: 5%;
+  margin-top: 7%;
 }
 
-body .main-menu .menu-item {
-  margin: 0 auto;
+body #mainpage .main-menu .menu-item {
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-body .main-menu .menu-item .menu-pic {
+body #mainpage .main-menu .menu-item:hover {
+  cursor: pointer;
+}
+
+body #mainpage .main-menu .menu-item:hover .menu-pic-top {
+  -webkit-transform: translate(-20px, -20px);
+          transform: translate(-20px, -20px);
+}
+
+body #mainpage .main-menu .menu-item:hover .menu-pic-bottom {
+  -webkit-transform: translate(15px, 15px);
+          transform: translate(15px, 15px);
+}
+
+body #mainpage .main-menu .menu-item .menu-pic {
   width: 70%;
   height: auto;
+  -webkit-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+body #mainpage .main-menu .menu-item .menu-pic.menu-pic-top {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+body #mainpage .main-menu .menu-item .menu-pic.menu-pic-bottom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+body #mainpage .main-menu .social-menu {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+body #mainpage .main-menu .social-menu .social-tab {
+  width: 70%;
+  height: auto;
+}
+
+body #mainpage .main-menu .social-menu .social-tab.social-front {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+body #mainpage .main-menu .social-menu .social-tab.social-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 /*# sourceMappingURL=index.css.map */
