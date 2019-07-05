@@ -10,6 +10,7 @@ body a {
 
 body #mainpage {
   width: 100%;
+  display: block;
 }
 
 body #mainpage #jiggybanner {
@@ -140,58 +141,55 @@ body #mainpage #social-area #inner-social .social-dot-holder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 55%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   -webkit-box-shadow: none;
           box-shadow: none;
-  width: 25px;
-  height: 25px;
   color: #38839E;
-  margin-top: 25px;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
 
-body #mainpage #social-area #inner-social .social-dot-holder#twitter-dot {
+body #mainpage #social-area #inner-social .social-dot-holder .social-link {
+  width: 25px;
+  height: 25px;
+  border-radius: 55%;
+}
+
+body #mainpage #social-area #inner-social .social-dot-holder .social-link#twitter-dot {
   background-color: #0095d3;
   z-index: 10;
 }
 
-body #mainpage #social-area #inner-social .social-dot-holder#instagram-dot {
+body #mainpage #social-area #inner-social .social-dot-holder .social-link#instagram-dot {
   background-color: #d838cb;
   z-index: 10;
 }
 
-body #mainpage #social-area #inner-social .social-dot-holder#twitch-dot {
+body #mainpage #social-area #inner-social .social-dot-holder .social-link#twitch-dot {
   background-color: #431568;
   z-index: 10;
 }
 
-body #mainpage #social-area #inner-social .social-dot-holder#patreon-dot {
+body #mainpage #social-area #inner-social .social-dot-holder .social-link#patreon-dot {
   background-color: #e47922;
   z-index: 10;
 }
 
-body #mainpage #social-area #inner-social .social-dot-holder#facebook-dot {
+body #mainpage #social-area #inner-social .social-dot-holder .social-link#facebook-dot {
   background-color: #3628b4;
   z-index: 10;
 }
 
-body #mainpage #social-area #inner-social .social-dot-holder .social-link {
-  font-size: 1.5em;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  color: #38839E;
-  -webkit-transition: all .25s ease;
-  transition: all .25s ease;
-}
-
-body #mainpage #social-area #inner-social .social-dot-holder .social-link .social-title {
+body #mainpage #social-area #inner-social .social-dot-holder p {
   opacity: 0;
-  text-shadow: 2px 2px 5px #86A1AD;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+  font-size: 1.2em;
   -webkit-transition: all .25s ease;
   transition: all .25s ease;
 }
@@ -200,13 +198,10 @@ body #mainpage #social-area #inner-social .social-dot-holder:hover {
   cursor: pointer;
 }
 
-body #mainpage #social-area #inner-social .social-dot-holder:hover .social-link {
-  -webkit-transform: translateX(-550%);
-          transform: translateX(-550%);
-}
-
-body #mainpage #social-area #inner-social .social-dot-holder:hover .social-link .social-title {
+body #mainpage #social-area #inner-social .social-dot-holder:hover p {
   opacity: 1;
+  -webkit-transform: translateX(-175%);
+          transform: translateX(-175%);
 }
 
 body #mainpage #social-area:hover {
@@ -228,8 +223,13 @@ body #mainpage #social-area:hover #inner-social {
   left: 5%;
 }
 
-body #mainpage #social-area:hover #inner-social .social-dot-holder {
+body #mainpage #social-area:hover #inner-social .social-link {
   -webkit-box-shadow: 5px 5px 10px #38839E;
           box-shadow: 5px 5px 10px #38839E;
+}
+
+body #workspage {
+  width: 100%;
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */

@@ -21,7 +21,7 @@
       <div class="intro-text">Hey Jiggypops! Thanks so much for stopping by! Take a look around the site and drop a line!</div>
     </div>
     <div class="main-menu">
-      <div id="menu-works" class="menu-item works">
+      <div id="menu-works" class="menu-item works" onclick="toggleVisibility()">
         <img class="menu-pic menu-pic-bottom works-pic" src="./images/menuWorks_bottom.png" />
         <img class="menu-pic menu-pic-top works-pic" src="./images/menuWorks_top.png" />
       </div>
@@ -39,35 +39,30 @@
       </div> 
     </div>
     <div id="social-area" class="social-menu">
-        <section id="inner-social" class="inner-social-menu">
-          <div class="social-dot-holder social-twitter" id="twitter-dot">
-            <a href="#" class="social-link twitter" id="twitter-circle">
-                <span class="social-title">TWITTER</span>
-            </a>
-          </div>
-          <div class="social-dot-holder social-instagram" id="instagram-dot">
-              <a href="#" class="social-link instagram" id="instagram-circle">
-                  <span class="social-title">INSTAGRAM</span>
-              </a>
-          </div>
-          <div class="social-dot-holder social-twitch" id="twitch-dot">
-              <a href="#" class="social-link twitch" id="twitch-circle">
-                  <span class="social-title">TWITCH</span>
-              </a>
-          </div>
-          <div class="social-dot-holder social-patreon" id="patreon-dot">
-              <a href="#" class="social-link patreon" id="patreon-circle">
-                  <span class="social-title">PATREON</span>
-              </a>
-          </div>
-          <div class="social-dot-holder social-facebook" id="facebook-dot">
-              <a href="#" class="social-link facebook" id="facebook-circle">
-                  <span class="social-title">FACEBOOK</span>
-              </a>
-          </div>
-        </section>
         <img class="social-tab social-bg" src="./images/menuSocialMain_bottom.png" />
         <img class="social-tab social-front" src="./images/menuSocialMain_top.png" />
+        <section id="inner-social" class="inner-social-menu">
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-twitter twitter" id="twitter-dot"></div>
+            <p class="social-title">TWITTER</p>
+          </a>
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-instagram instagram" id="instagram-dot"></div>
+            <p class="social-title">INSTAGRAM</p>    
+          </a>
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-twitch twitch" id="twitch-dot"></div>
+            <p class="social-title">TWITCH</p>
+          </a>
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-patreon patreon" id="patreon-dot"></div>
+            <p class="social-title">PATREON</p> 
+          </a>
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-facebook facebook" id="facebook-dot"></div>
+            <p class="social-title">FACEBOOK</p>               
+          </a>
+        </section>
       </div>
   </div>
   <div id="workspage" class="works-page">
