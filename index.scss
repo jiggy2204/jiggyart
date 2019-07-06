@@ -22,9 +22,16 @@ body {
         text-decoration: none;
     }
 
+    .active {
+        display: block;
+    }
+
+    .inactive {
+        display: none;
+    }
+
     #mainpage {
         width: 100%;
-        display: block;
 
         #jiggybanner {
             width: 33%;
@@ -223,6 +230,14 @@ body {
 
     #workspage {
         width: 100%;
-        display: none;
+
+        .homebutton {
+            border: 1px solid $primeMedRed;
+            color: #38839E;
+            font-size: 2em;
+            width: 250px;
+            height: auto;
+            display: inline-block;
+        }
     }
 }

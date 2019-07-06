@@ -7,11 +7,12 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 </head>
 
 <body>
-  <div id="mainpage" class="mainTitle">
+  <div id="mainpage" class="main-page active">
     <div class="title-banner" id="jiggybanner">
         <div class="bannerBG" id="banner-bg"></div>
         <img src="./images/jiggyart_title.png" class="title" id="bannerTitle" />
@@ -21,19 +22,19 @@
       <div class="intro-text">Hey Jiggypops! Thanks so much for stopping by! Take a look around the site and drop a line!</div>
     </div>
     <div class="main-menu">
-      <div id="menu-works" class="menu-item works" onclick="toggleVisibility()">
+      <div class="menu-item works" data-target="workspage">
         <img class="menu-pic menu-pic-bottom works-pic" src="./images/menuWorks_bottom.png" />
         <img class="menu-pic menu-pic-top works-pic" src="./images/menuWorks_top.png" />
       </div>
-      <div id="menu-commissions" class="menu-item commissions">
+      <div class="menu-item commissions">
         <img class="menu-pic menu-pic-bottom comm-pic" src="./images/menuCommissions_bottom.png" />
         <img class="menu-pic menu-pic-top comm-pic" src="./images/menuCommissions_top.png" />
       </div>
-      <div id="menu-comic" class="menu-item comic">
+      <div href=""class="menu-item comic">
         <img class="menu-pic menu-pic-bottom comic-pic" src="./images/menuComic_bottom.png" />
         <img class="menu-pic menu-pic-top comic-pic" src="./images/menuComic_top.png" />
       </div>
-      <div id="menu-about" class="menu-item about">
+      <div class="menu-item about">
         <img class="menu-pic menu-pic-bottom about-pic" src="./images/menuAbout_bottom.png" />
         <img class="menu-pic menu-pic-top about-pic" src="./images/menuAbout_top.png" />
       </div> 
@@ -65,10 +66,14 @@
         </section>
       </div>
   </div>
-  <div id="workspage" class="works-page">
+  <div id="workspage" class="works-page inactive">
     <h2>WORKS</h2>
     <p>Test if switch works</p>
+    <br>
+    <div class="homebutton" data-target="mainpage">
+      <div class="gohome">HOME</div>
+    </div>
   </div>
-  <script src="index.js"></script>
+  <script src="index.js" type="text/javascript"></script>
 </body>
 </html>

@@ -8,9 +8,16 @@ body a {
   text-decoration: none;
 }
 
+body .active {
+  display: block;
+}
+
+body .inactive {
+  display: none;
+}
+
 body #mainpage {
   width: 100%;
-  display: block;
 }
 
 body #mainpage #jiggybanner {
@@ -230,6 +237,14 @@ body #mainpage #social-area:hover #inner-social .social-link {
 
 body #workspage {
   width: 100%;
-  display: none;
+}
+
+body #workspage .homebutton {
+  border: 1px solid #CC5a5a;
+  color: #38839E;
+  font-size: 2em;
+  width: 250px;
+  height: auto;
+  display: inline-block;
 }
 /*# sourceMappingURL=index.css.map */
