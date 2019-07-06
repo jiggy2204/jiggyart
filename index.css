@@ -8,11 +8,11 @@ body a {
   text-decoration: none;
 }
 
-body .active {
+body .jiggypage.active {
   display: block;
 }
 
-body .inactive {
+body .jiggypage {
   display: none;
 }
 
@@ -246,5 +246,9 @@ body #workspage .homebutton {
   width: 250px;
   height: auto;
   display: inline-block;
+}
+
+body #workspage .homebutton:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

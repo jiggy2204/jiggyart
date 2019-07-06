@@ -1,11 +1,11 @@
 $(document).ready(function(){
 
-    var page = $('div').data('target');
-
-    page.click(function(cl){
-
-        if(cl == $('div').attr('id')){
-            console.log(page);
+   $('a').click(function(e){
+        e.preventDefault();
+        if($('a').attr('data-target')){
+            var pageTarget = $(this).attr('data-target');
+            $(".jiggypage").removeClass("active");
+            $("#"+pageTarget).addClass("active");
         }
     })
 });
