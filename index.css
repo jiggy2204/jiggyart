@@ -10,10 +10,14 @@ body a {
 
 body .jiggypage.active {
   display: block;
+  -webkit-animation: slideIn 1s;
+          animation: slideIn 1s;
 }
 
 body .jiggypage {
   display: none;
+  -webkit-animation: slideOut 1s;
+          animation: slideOut 1s;
 }
 
 body #mainpage {
@@ -250,5 +254,57 @@ body #workspage .homebutton {
 
 body #workspage .homebutton:hover {
   cursor: pointer;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slideOut {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=index.css.map */
