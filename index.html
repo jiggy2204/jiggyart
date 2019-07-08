@@ -7,46 +7,75 @@
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 
 <body>
-  <div id="mainpage" class="mainTitle">
+  <main id="mainpage" class="main-page jiggypage active">
     <div class="title-banner" id="jiggybanner">
         <div class="bannerBG" id="banner-bg"></div>
-        <img src="_images/jiggyart_title.png" class="title" id="bannerTitle" />
+        <img src="./images/jiggyart_title.png" class="title" id="bannerTitle" />
     </div>
     <div class="intro" id="intro-container">
       <div class="intro-header">WELCOME</div>
       <div class="intro-text">Hey Jiggypops! Thanks so much for stopping by! Take a look around the site and drop a line!</div>
     </div>
     <div class="main-menu">
-      <div id="menu-works" class="menu-item works">
-        <img class="menu-pic menu-pic-bottom works-pic" src="./_images/menuWorks_bottom.png" />
-        <img class="menu-pic menu-pic-top works-pic" src="./_images/menuWorks_top.png" />
+      <a class="menu-item works" data-target="workspage">
+        <img class="menu-pic menu-pic-bottom works-pic" src="./images/menuWorks_bottom.png" />
+        <img class="menu-pic menu-pic-top works-pic" src="./images/menuWorks_top.png" />
+      </a>
+      <div class="menu-item commissions">
+        <img class="menu-pic menu-pic-bottom comm-pic" src="./images/menuCommissions_bottom.png" />
+        <img class="menu-pic menu-pic-top comm-pic" src="./images/menuCommissions_top.png" />
       </div>
-      <div id="menu-commissions" class="menu-item commissions">
-        <img class="menu-pic menu-pic-bottom comm-pic" src="./_images/menuCommissions_bottom.png" />
-        <img class="menu-pic menu-pic-top comm-pic" src="./_images/menuCommissions_top.png" />
+      <div href=""class="menu-item comic">
+        <img class="menu-pic menu-pic-bottom comic-pic" src="./images/menuComic_bottom.png" />
+        <img class="menu-pic menu-pic-top comic-pic" src="./images/menuComic_top.png" />
       </div>
-      <div id="menu-comic" class="menu-item comic">
-        <img class="menu-pic menu-pic-bottom comic-pic" src="./_images/menuComic_bottom.png" />
-        <img class="menu-pic menu-pic-top comic-pic" src="./_images/menuComic_top.png" />
-      </div>
-      <div id="menu-about" class="menu-item about">
-        <img class="menu-pic menu-pic-bottom about-pic" src="./_images/menuAbout_bottom.png" />
-        <img class="menu-pic menu-pic-top about-pic" src="./_images/menuAbout_top.png" />
+      <div class="menu-item about">
+        <img class="menu-pic menu-pic-bottom about-pic" src="./images/menuAbout_bottom.png" />
+        <img class="menu-pic menu-pic-top about-pic" src="./images/menuAbout_top.png" />
       </div> 
-      <div id="social-area" class="social-menu">
-        <img class="social-tab social-bg" src="_images/menuSocialMain_bottom.png" />
-        <img class="social-tab soclal-front" src="_images/menuSocialMain_top.png" />
-      </div>
     </div>
-  </div>
-  <div id="workspage" class="works-page">
+    <div id="social-area" class="social-menu">
+        <img class="social-tab social-bg" src="./images/menuSocialMain_bottom.png" />
+        <img class="social-tab social-front" src="./images/menuSocialMain_top.png" />
+        <section id="inner-social" class="inner-social-menu">
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-twitter twitter" id="twitter-dot"></div>
+            <p class="social-title">TWITTER</p>
+          </a>
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-instagram instagram" id="instagram-dot"></div>
+            <p class="social-title">INSTAGRAM</p>    
+          </a>
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-twitch twitch" id="twitch-dot"></div>
+            <p class="social-title">TWITCH</p>
+          </a>
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-patreon patreon" id="patreon-dot"></div>
+            <p class="social-title">PATREON</p> 
+          </a>
+          <a href="#" class="social-dot-holder">
+            <div class="social-link social-facebook facebook" id="facebook-dot"></div>
+            <p class="social-title">FACEBOOK</p>               
+          </a>
+        </section>
+      </div>
+    </main>
+  <main id="workspage" class="works-page jiggypage">
     <h2>WORKS</h2>
     <p>Test if switch works</p>
-  </div>
-  <script src="index.js"></script>
+    <div>
+    <a class="homebutton" data-target="mainpage">
+      <div class="gohome">HOME</div>
+    </a>
+    </div>
+  </main>
+  <script src="index.js" type="text/javascript"></script>
 </body>
 </html>
