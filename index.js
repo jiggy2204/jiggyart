@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+
    $('a').click(function(e){
         e.preventDefault();
         if($('a').attr('data-target')){
@@ -7,5 +8,9 @@ $(document).ready(function(){
             $(".jiggypage").removeClass("active");
             $("#"+pageTarget).addClass("active");
         }
+    });
+
+    $('#pagemenu').click(function(){
+        $(this).toggle('change');
     })
 });
