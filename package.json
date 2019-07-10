@@ -1,0 +1,19 @@
+{
+  "name": "jiggyart_website",
+  "version": "1.0.0",
+  "description": "A site that houses my works and commissions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jiggy2204/jiggyart_website.git"
+  },
+  "author": "Jennifer D. Ignacio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jiggy2204/jiggyart_website/issues"
+  },
+  "homepage": "https://github.com/jiggy2204/jiggyart_website#readme"
+}
