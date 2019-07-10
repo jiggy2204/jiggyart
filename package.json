@@ -12,8 +12,39 @@
   },
   "author": "Jennifer D. Ignacio",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jiggy2204/jiggyart_website/issues"
+  "dependencies": {
+    "classlist": "^2.0.0",
+    "express": "^4.17.0",
+    "jshint": "^2.10.2",
+    "lodash": "^4.17.11",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
-  "homepage": "https://github.com/jiggy2204/jiggyart_website#readme"
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@babel/plugin-proposal-throw-expressions": "^7.2.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "copy-webpack-plugin": "^5.0.3",
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "json-loader": "^0.5.7",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.12.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.1",
+    "raw-loader": "^2.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "terser-webpack-plugin": "^1.2.4",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1",
+    "webpack-merge": "^4.2.1",
+    "webpack-visualizer-plugin": "^0.1.11"
+  }
 }
