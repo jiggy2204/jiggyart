@@ -1,16 +1,21 @@
-$(document).ready(function(){
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 
+import Home from './home';
+import Works from './works';
 
-   $('a').click(function(e){
-        e.preventDefault();
-        if($('a').attr('data-target')){
-            var pageTarget = $(this).attr('data-target');
-            $(".jiggypage").removeClass("active");
-            $("#"+pageTarget).addClass("active");
-        }
-    });
+import './index.scss';
 
-    $('#pagemenu').click(function(){
-        $(this).toggle('change');
-    })
-});
+class App extends Component {
+
+    render(){
+        return(
+            <div>
+                <Home />
+                <Works />
+            </div>
+        )
+    }
+}
+
+ReactDOM.render(<App />, document.getElementById("app-root"));
