@@ -4,12 +4,13 @@ class Works extends Component {
 
     render(){
         return(
-            <div id="workspage" class="works-page jiggypage">
-                <menu class="page-mainmenu hamburger" id="pagemenu">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-                </menu>
+            <div id="workspage" className="works-page jiggypage">
+                <header className="pageHeader">
+                    <img className="worksHeader pageHeaderImg" src='./images/menuWorks.png'></img>
+                    <p className="header-text">
+                        Commissions, fanart, and originals that I've done. Some of these are a labor of love, but I definitely find doing work for other people more fulfilling and fun!
+                    </p>
+                </header>
             </div>
         )
     }
