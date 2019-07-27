@@ -4,7 +4,7 @@ class Works extends Component {
 
     render(){
         return(
-            <div id="workspage" className="works-page jiggypage">
+            <div id="workspage" className="works-page jiggypage active">
                 <header className="pageHeader">
                     <img className="worksHeader pageHeaderImg" src='./images/menuWorks.png'></img>
                     <p className="header-text">

@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div id="menu-holder" className="hamburger">
+        <div id="menu-holder" className="hamburger active">
           <menu className="page-mainmenu" id="pagemenu">
             <div id="nav-icon-main" onClick={this.openMenu}>
               <span />
