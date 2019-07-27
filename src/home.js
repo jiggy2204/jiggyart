@@ -10,7 +10,7 @@ class Home extends Component {
 
   render() {
     return (
-      <div id="mainpage" className="main-page jiggypage active">
+      <div id="mainpage" className="main-page jiggypage">
         <div className="title-banner" id="jiggybanner">
           <div className="bannerBG" id="banner-bg" />
           <img

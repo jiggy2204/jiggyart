@@ -12,6 +12,10 @@ $shadowLtRed: #c69dc6;
 
 $accentShadowGrey: #86a1ad;
 
+html {
+  overflow: hidden;
+}
+
 body {
   font-family: "Gibson", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
@@ -42,7 +46,7 @@ body {
     animation: slideOut 1s;
   }
 
-  #mainpage {
+  #mainpage.active {
     width: 100%;
 
     #jiggybanner {
@@ -128,23 +132,68 @@ body {
         }
       }
     }
-  } //End Main Page
+  }
 
+  //End Main Page
+
+  #mainpage,
   #workspage,
   #commissionpage,
   #comicpage,
   #aboutpage {
+    display: none;
+  }
+
+  #workspage.active,
+  #commissionpage.active,
+  #comicpage.active,
+  #aboutpage.active {
     width: 100%;
+    display: flex;
 
     .pageHeader {
+      flex: 0;
       margin-left: 5%;
-      width: 15%;
 
       .header-text {
         margin-top: 25%;
         line-height: 1.5em;
       }
     }
+
+    main {
+      flex: 1.25;
+      margin: 5%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+#workspage.active {
+
+  .shadowDiv {
+    margin: 15px;
+    height: 196px;
+    transition: filter .25s ease-in-out;
+
+    .imageThumb {
+      .imageMain {
+        width: 70%;
+        height: auto;
+        clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+      filter: drop-shadow(5px 5px 10px $accentPurple);
+    }
+  }
+
+  .workSideFiller {
+    flex: 0.25;
   }
 }
 
@@ -258,15 +307,15 @@ body {
 }
 
 #menu-holder {
-  float: right;
-  clear: none;
-  margin: 1%;
+  position: absolute;
+  right: 0;
+  top: 0;
 
-  .hamburger {
+  &.hamburger {
     display: flex;
     justify-content: flex-end;
     align-content: center;
-    margin: 3%;
+    margin-right: 3%;
 
     #nav-icon-main {
       width: 50px;
@@ -285,6 +334,7 @@ body {
         color: $primeDkRed;
         font-size: 1.15em;
         opacity: 0;
+        padding-top: 25%;
         transform: translateX(-1000px);
         transition: 0.25s ease-in-out;
 
@@ -387,6 +437,7 @@ body {
     transform: translateX(-100%);
     opacity: 0;
   }
+
   100% {
     transform: translateX(0%);
     opacity: 1;
@@ -398,6 +449,7 @@ body {
     transform: translateX(0%);
     opacity: 1;
   }
+
   100% {
     transform: translateX(100%);
     opacity: 0;
