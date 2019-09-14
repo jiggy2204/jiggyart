@@ -26,23 +26,12 @@ body {
     list-style-type: none;
   }
 
-  .jiggypage.active {
+  .jiggypage {
     display: block;
     animation: slideIn 1s;
   }
 
-  .hamburger.active {
-    display: flex;
-    animation: slideIn 1s;
-  }
-
-  .hamburger,
-  .jiggypage {
-    display: none;
-    animation: slideOut 1s;
-  }
-
-  #mainpage.active {
+  #mainpage {
     display: block;
     width: 100%;
 
@@ -133,18 +122,10 @@ body {
 
   //End Main Page
 
-  #mainpage,
   #workspage,
   #commissionpage,
   #comicpage,
   #aboutpage {
-    display: none;
-  }
-
-  #workspage.active,
-  #commissionpage.active,
-  #comicpage.active,
-  #aboutpage.active {
     width: 100%;
     display: flex;
 
@@ -168,8 +149,7 @@ body {
   }
 }
 
-#workspage.active {
-
+#workspage {
   .modal {
     display: none;
     position: absolute;
@@ -180,7 +160,7 @@ body {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, .8);
+    background-color: rgba(0, 0, 0, 0.8);
 
     .close {
       color: #fff;
@@ -190,7 +170,7 @@ body {
       font-size: 3em;
       font-weight: 600;
       line-height: 25px;
-      transition: all .25s ease;
+      transition: all 0.25s ease;
 
       &:hover,
       &:focus {
@@ -239,7 +219,7 @@ body {
         top: 50%;
         width: auto;
         padding: 1em;
-        color: rgba(250, 250, 250, .2);
+        color: rgba(250, 250, 250, 0.2);
         font-weight: 600;
         font-size: 2em;
         transition: 0.5s ease;
@@ -249,7 +229,7 @@ body {
 
         &:hover {
           color: $accentDkBlue;
-          background-color: rgba(0, 0, 0, .8);
+          background-color: rgba(0, 0, 0, 0.8);
         }
       }
 
@@ -267,7 +247,7 @@ body {
   .shadowDiv {
     margin: 15px;
     height: 196px;
-    transition: filter .25s ease-in-out;
+    transition: filter 0.25s ease-in-out;
 
     .imageThumb {
       width: 70px;
@@ -291,7 +271,7 @@ body {
   }
 }
 
-#commissionpage.active {
+#commissionpage {
   flex-wrap: wrap;
   align-items: center;
 
@@ -350,7 +330,7 @@ body {
         width: 35%;
         padding: 10px;
         clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-        transition: all .25s ease;
+        transition: all 0.25s ease;
 
         &:hover {
           cursor: pointer;
@@ -470,6 +450,10 @@ body {
       }
     }
   }
+}
+
+.hamburger {
+  display: none;
 }
 
 #menu-holder {

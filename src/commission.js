@@ -4,7 +4,7 @@ class Commission extends Component {
 
     render(){
         return(
-            <div id="commissionpage" className="commission-page jiggypage active">
+            <div id="commissionpage" className="commission-page jiggypage">
                 <header className="pageHeader">
                     <img className="commissionHeader pageHeaderImg" src='./images/menuCommissions.png'></img>
                     <p className="header-text">
