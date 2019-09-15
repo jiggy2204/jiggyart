@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
 import "./index.scss";
+import "react-image-lightbox/style.css";
 
 import Home from "./home";
 import Works from "./works";

@@ -1,104 +1,71 @@
-import React, { Component } from 'react';
-import WorkImages from './worksList.json';
+import React, { Component } from "react";
+import WorkImages from "./worksList.json";
+import Lightbox from "react-image-lightbox";
 
-var slideIndex = 1;
+const images = JSON.parse(WorkImages);
 
 class Works extends Component {
-    constructor(props){
-        super(props)
-            this.state ={
-                images: WorkImages
-        }
-        this.closeModal = this.closeModal.bind(this);
-        this.openModal = this.openModal.bind(this);
-        this.currentSlide = this.currentSlide.bind(this);
-        this.nextSlide = this.nextSlide.bind(this);
-        this.showSlides = this.showSlides.bind(this);
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      photoIndex: 0,
+      isOpen: false
+    };
+  }
 
-    closeModal(){
-        $(".modal").removeClass("active");
-        $(".mySlides").removeClass("active");
-    }
-
-    openModal(e){
-        var n = e.currentTarget.id;
-
-        $(".modal").addClass("active");
-        var sl = $("#" + n +".mySlides").addClass("active");
-
-   
-        this.currentSlide(sl);
-
-        console.log(e.currentTarget.id);
-    }
-
-    nextSlide(n){
-        this.showSlides(slideIndex += n);
-    }
-
-    
-    currentSlide(n){
-        this.showSlides(slideIndex = n);
-        console.log(n);
-    }
-
-    showSlides(n){
-        var i;
-        var slides = document.querySelectorAll(".mySlides");
-
-        if(n > slides.length) {
-            slideIndex = 1;
-        }
-
-        if(n < 1) {
-            slideIndex = slides.length;
-        }
-        
-        console.log(slides)
-    }
-
-    render(){
-        const {images} = this.state;
-        return(
-            <div id="workspage" className="works-page jiggypage">
-                <div id="myModal" className="modal">
-                    <span className="close cursor" onClick={this.closeModal}>X</span>
-                    <div className="modalContent">
-                        {images.map((img, ix) => {
-                            return (
-                                <div className="mySlides" id={img.index} key={ix}>
-                                    <img src={img.fullsize} className="fullImage"></img>
-                                    <div className="caption-container">
-                                        <p id="picCaption">{img.description}</p>
-                                    </div>
-                                </div>
-                            )
-                        })}
-                        <a className="prevArrow" onClick={this.nextSlide(-1)}>&#10094;</a>
-                        <a className="nextArrow" onClick={this.nextSlide(1)}>&#10095;</a>
-                    </div>
+  render() {
+    const { photoIndex, isOpen } = this.state;
+    return (
+      <div id="workspage" className="works-page jiggypage">
+        <header className="pageHeader">
+          <img
+            className="worksHeader pageHeaderImg"
+            src="./images/menuWorks.png"
+          ></img>
+          <p className="header-text">
+            Commissions, fanart, and originals that I've done. Some of these are
+            a labor of love, but I definitely find doing work for other people
+            more fulfilling and fun!
+          </p>
+        </header>
+        <main className="content-section">
+          {images.map((pic, idx) => {
+            return (
+              <div key={idx} id={pic.index} className="shadowDiv">
+                <div className="imageThumb">
+                  <img
+                    className="imageMain"
+                    src={pic.fullsize}
+                    onClick={() =>
+                      this.setState({ photoIndex: idx, isOpen: true })
+                    }
+                  />
                 </div>
-                <header className="pageHeader">
-                    <img className="worksHeader pageHeaderImg" src='./images/menuWorks.png'></img>
-                    <p className="header-text">
-                        Commissions, fanart, and originals that I've done. Some of these are a labor of love, but I definitely find doing work for other people more fulfilling and fun!
-                    </p>
-                </header>
-                <main className="content-section">
-                    {images !== null ? 
-                    images.map((pic, idx) => {
-                        return <div key={idx} id={pic.index} className="shadowDiv" onClick={this.openModal}>
-                                    <div className="imageThumb">
-                                        <img className="imageMain" src={pic.thumb} />
-                                    </div>
-                                </div>
-                    }) : ''}
-                </main>
-                <div className="workSideFiller"></div>
-            </div>
-        )
-    }
+              </div>
+            );
+          })}
+        </main>
+        {isOpen && (
+          <Lightbox
+            mainSrc={images[photoIndex]}
+            nextSrc={images[(photoIndex + 1) % images.length]}
+            prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+            onCloseRequest={() => this.setState({ isOpen: false })}
+            onMovePrevRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + images.length - 1) % images.length
+              })
+            }
+            onMoveNextRequest={() =>
+              this.setState({
+                photoIndex: (photoIndex + 1) % images.length
+              })
+            }
+          />
+        )}
+      </div>
+    );
+  }
 }
 
 export default Works;

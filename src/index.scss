@@ -140,7 +140,7 @@ body {
     }
 
     main {
-      flex: 1.25;
+      flex: 1;
       margin: 5%;
       display: flex;
       flex-wrap: wrap;
@@ -244,17 +244,21 @@ body {
     }
   }
 
+  .content-section {
+    margin: 7% auto;
+    width: 100%;
+  }
+
   .shadowDiv {
-    margin: 15px;
-    height: 196px;
+    margin: 0 2%;
     transition: filter 0.25s ease-in-out;
 
     .imageThumb {
-      width: 70px;
-      height: 196px;
+      width: 90px;
+      height: 252px;
 
       .imageMain {
-        width: 70%;
+        width: 100%;
         height: auto;
         clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 80%);
       }
@@ -272,16 +276,17 @@ body {
 }
 
 #commissionpage {
-  flex-wrap: wrap;
   align-items: center;
 
   #commissionInfo {
     display: flex;
     align-items: center;
-    margin-left: 2%;
+    justify-content: center;
+    width: 100%;
+    margin: 0 15%;
 
     .comInfoMain {
-      margin: 0 1%;
+      margin: 0 2%;
     }
 
     .comPic {
@@ -309,7 +314,8 @@ body {
   #commNotes {
     color: $accentDkBlue;
     font-weight: 300;
-    margin: 3% 0 0 5%;
+    margin: 0 10%;
+    width: 100%;
     background-color: $primeLtRed;
     padding: 35px;
 

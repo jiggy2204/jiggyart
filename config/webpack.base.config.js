@@ -23,13 +23,20 @@ module.exports = env => {
             }
           },
           {
-            test: /\.scss$/,
+            test: /\.(scss|sass|css)$/i,
+            include: [
+              path.resolve(__dirname, "node-modules"),
+              path.resolve(
+                __dirname,
+                "node-modules/react-image-lightbox/style.css"
+              )
+            ],
             use: [
               PLATFORM === "production"
                 ? MiniCssExtractPlugin.loader
-                : "style-loader",
-              "css-loader",
-              "sass-loader"
+                : { loader: "style-loader" },
+              { loader: "css-loader" },
+              { loader: "sass-loader" }
             ]
           },
           {
