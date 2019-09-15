@@ -1,9 +1,5 @@
 import React, { Component } from "react";
-
-import Works from "./works";
-import Commission from "./commission";
-import Comic from "./comic";
-import About from "./about";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   render() {
@@ -24,48 +20,103 @@ class Home extends Component {
             the site and drop a line!
           </div>
         </div>
-          <div className="main-menu">
-            <div className="menu-item works">
-                <img
-                  className="menu-pic menu-pic-bottom works-pic"
-                  src="./images/menuWorks_bottom.png"
-                />
-                <img
-                  className="menu-pic menu-pic-top works-pic"
-                  src="./images/menuWorks_top.png"
-                />
-            </div>
-            <div className="menu-item commissions">
-                <img
-                  className="menu-pic menu-pic-bottom comm-pic"
-                  src="./images/menuCommissions_bottom.png"
-                />
-                <img
-                  className="menu-pic menu-pic-top comm-pic"
-                  src="./images/menuCommissions_top.png"
-                />
-            </div>
-            <div className="menu-item comic">
-                <img
-                  className="menu-pic menu-pic-bottom comic-pic"
-                  src="./images/menuComic_bottom.png"
-                />
-                <img
-                  className="menu-pic menu-pic-top comic-pic"
-                  src="./images/menuComic_top.png"
-                />
-            </div>
-            <div className="menu-item about">
-                <img
-                  className="menu-pic menu-pic-bottom about-pic"
-                  src="./images/menuAbout_bottom.png"
-                />
-                <img
-                  className="menu-pic menu-pic-top about-pic"
-                  src="./images/menuAbout_top.png"
-                />
-            </div>
+        <div className="main-menu">
+          <div className="menu-item works">
+            <Link to="/works">
+              <img
+                className="menu-pic menu-pic-bottom works-pic"
+                src="./images/menuWorks_bottom.png"
+              />
+              <img
+                className="menu-pic menu-pic-top works-pic"
+                src="./images/menuWorks_top.png"
+              />
+            </Link>
           </div>
+          <div className="menu-item commissions">
+            <Link to="/commission">
+            <img
+              className="menu-pic menu-pic-bottom comm-pic"
+              src="./images/menuCommissions_bottom.png"
+            />
+            <img
+              className="menu-pic menu-pic-top comm-pic"
+              src="./images/menuCommissions_top.png"
+            />
+            </Link>
+          </div>
+          <div className="menu-item comic">
+            <Link to="/comic">
+            <img
+              className="menu-pic menu-pic-bottom comic-pic"
+              src="./images/menuComic_bottom.png"
+            />
+            <img
+              className="menu-pic menu-pic-top comic-pic"
+              src="./images/menuComic_top.png"
+            />
+            </Link>
+          </div>
+          <div className="menu-item about">
+            <Link to="/about">
+            <img
+              className="menu-pic menu-pic-bottom about-pic"
+              src="./images/menuAbout_bottom.png"
+            />
+            <img
+              className="menu-pic menu-pic-top about-pic"
+              src="./images/menuAbout_top.png"
+            />
+            </Link>
+          </div>
+        </div>
+        <div id="social-area" className="social-menu">
+          <img
+            className="social-tab social-bg"
+            src="./images/menuSocialMain_bottom.png"
+          />
+          <img
+            className="social-tab social-front"
+            src="./images/menuSocialMain_top.png"
+          />
+          <section id="inner-social" className="inner-social-menu">
+            <a href="#" className="social-dot-holder">
+              <div
+                className="social-link social-twitter twitter"
+                id="twitter-dot"
+              />
+              <p className="social-title">TWITTER</p>
+            </a>
+            <a href="#" className="social-dot-holder">
+              <div
+                className="social-link social-instagram instagram"
+                id="instagram-dot"
+              />
+              <p className="social-title">INSTAGRAM</p>
+            </a>
+            <a href="#" className="social-dot-holder">
+              <div
+                className="social-link social-twitch twitch"
+                id="twitch-dot"
+              />
+              <p className="social-title">TWITCH</p>
+            </a>
+            <a href="#" className="social-dot-holder">
+              <div
+                className="social-link social-patreon patreon"
+                id="patreon-dot"
+              />
+              <p className="social-title">PATREON</p>
+            </a>
+            <a href="#" className="social-dot-holder">
+              <div
+                className="social-link social-facebook facebook"
+                id="facebook-dot"
+              />
+              <p className="social-title">FACEBOOK</p>
+            </a>
+          </section>
+        </div>
       </div>
     );
   }

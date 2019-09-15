@@ -452,16 +452,12 @@ body {
   }
 }
 
-.hamburger {
-  display: none;
-}
-
 #menu-holder {
   position: absolute;
   right: 0;
   top: 0;
 
-  &.hamburger.active {
+  &.hamburger {
     display: flex;
     justify-content: flex-end;
     align-content: center;
@@ -490,6 +486,7 @@ body {
 
         .mainlink {
           display: inline;
+          color: $primeDkRed;
           padding: 10px 15px;
           transition: backround 0.5s, color 0.5s;
 
