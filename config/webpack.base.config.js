@@ -27,9 +27,9 @@ module.exports = env => {
             use: [
               PLATFORM === "production"
                 ? MiniCssExtractPlugin.loader
-                : { loader: "style-loader" },
-              { loader: "css-loader" },
-              { loader: "sass-loader" }
+                : "style-loader",
+              "css-loader",
+              "sass-loader"
             ]
           },
           {
