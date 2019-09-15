@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import WorkImages from "./worksList.json";
+import WorkImages from "./workList.json";
 import Lightbox from "react-image-lightbox";
 
 const images = JSON.parse(WorkImages);
