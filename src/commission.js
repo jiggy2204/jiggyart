@@ -19,7 +19,7 @@ class Commission extends Component {
           <section className="commissionInfo-holder" id="commissionInfo">
             <div className="sketch-info comInfoMain">
               <img
-                src="./images/cP_Sketch.JPG"
+                src="./images/cP_Sketch.jpg"
                 className="sketchex comPic"
               ></img>
               <h3 className="comtitle">SKETCH</h3>
@@ -28,7 +28,7 @@ class Commission extends Component {
             </div>
             <div className="lineart-info comInfoMain">
               <img
-                src="./images/cP_Lineart.JPG"
+                src="./images/cP_Lineart.jpg"
                 className="lineex comPic"
               ></img>
               <h3 className="comtitle">LINEART</h3>
@@ -37,7 +37,7 @@ class Commission extends Component {
             </div>
             <div className="baseColor-info comInfoMain">
               <img
-                src="./images/cP_ColorFlats.JPG"
+                src="./images/cP_ColorFlats.jpg"
                 className="colorex comPic"
               ></img>
               <h3 className="comtitle">COLOR</h3>

@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import $ from "jquery";
 
 import "./index.scss";
 import "react-image-lightbox/style.css";
@@ -12,7 +13,7 @@ import Comic from "./comic";
 import About from "./about";
 
 function toggleMenu() {
-  $("#nav-icon-main").toggleClass("Open");
+  $("#nav-icon-main").toggleClass("open");
 }
 
 const routes = (
