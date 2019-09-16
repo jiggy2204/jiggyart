@@ -34,7 +34,7 @@ class Works extends Component {
                 <div className="imageThumb">
                   <img
                     className="imageMain"
-                    src={pic.fullsize}
+                    src={pic.thumb}
                     onClick={() =>
                       this.setState({ photoIndex: idx, isOpen: true })
                     }
