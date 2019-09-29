@@ -11,7 +11,7 @@ class Comic extends Component {
           ></img>
           <p className="header-text">
             My first work with my husband! He and I co-wrote it, and I
-            illustrated it! Take a peek!
+            illustrated it! Coming soon!
           </p>
         </header>
       </div>
