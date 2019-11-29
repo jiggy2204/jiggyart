@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import $ from "jquery";
 
 class Commission extends Component {
   render() {
+    $("#menu-holder").show();
     return (
       <div id="commissionpage" className="commission-page jiggypage">
         <header className="pageHeader">

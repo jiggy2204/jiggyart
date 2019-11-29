@@ -1,8 +1,14 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import $ from 'jquery';
+
 class Home extends Component {
+
   render() {
+
+    $("#menu-holder").hide();
+
     return (
       <div id="mainpage" className="main-page jiggypage">
         <div className="title-banner" id="jiggybanner">

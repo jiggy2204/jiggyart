@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import $ from 'jquery';
 
 class Comic extends Component {
   render() {
+    $("#menu-holder").show();
     return (
       <div id="comicpage" className="comic-page jiggypage">
         <header className="pageHeader">

@@ -356,7 +356,7 @@ body {
 
   .social-tab {
     position: relative;
-    width: 75%;
+    width: 80%;
     height: auto;
     top: 0;
     left: 0;
@@ -458,7 +458,48 @@ body {
   }
 }
 
+#aboutpage {
+  .me-section {
+    margin-top: 3%;
+    text-align: center;
+    background-color: $primeLtRed;
+    width: 100%;
+    clip-path: polygon(15% 0%, 100% 0%, 90% 100%, 0% 100%);
+
+    .myPic-title {
+      color: $shadowDkRed
+    }
+    .myPic-subtitle {
+      color: $accentDkBlue;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+    }
+  }
+  .me-text {
+    font-size: 1.25em;
+    line-height: 1.75em;
+  }
+
+  #aboutFooter {
+    background-color: $accentLtGrey;
+    width: 100%;
+    padding-left: 25%;
+    margin-top: 5%;
+    clip-path: polygon(0% 0%, 85% 0%, 100% 100%, 15% 100%);
+
+    h3 {
+      font-size: 1.5em;
+      color: $accentPurple;
+    }
+
+    .aboutListItem{
+      font-size: 1.25em;
+    }
+  }
+}
+
 #menu-holder {
+  display: block;
   position: absolute;
   right: 0;
   top: 0;

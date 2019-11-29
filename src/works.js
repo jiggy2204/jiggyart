@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import WorkImages from "./workList.json";
 import Lightbox from "react-image-lightbox";
 
+import $ from 'jquery';
+
 class Works extends Component {
   constructor(props) {
     super(props);
@@ -13,6 +15,7 @@ class Works extends Component {
   }
 
   render() {
+    $("#menu-holder").show();
     const { images, photoIndex, isOpen } = this.state;
     return (
       <div id="workspage" className="works-page jiggypage">

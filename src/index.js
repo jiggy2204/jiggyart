@@ -30,19 +30,19 @@ const routes = (
           <span />
           <span />
           <ul className="pageItems" id="pageItemsAll">
-            <Link to="/">
+            <Link to="/" activeClassName="jiggypage">
               <li className="mainlink">HOME</li>
             </Link>
-            <Link to="/works">
+            <Link to="/works" activeClassName="jiggypage">
               <li className="mainlink">WORKS</li>
             </Link>
-            <Link to="/commission">
+            <Link to="/commission" activeClassName="jiggypage">
               <li className="mainlink">COMMISSIONS</li>
             </Link>
-            <Link to="/comic">
+            <Link to="/comic" activeClassName="jiggypage">
               <li className="mainlink">COMIC</li>
             </Link>
-            <Link to="/about">
+            <Link to="/about" activeClassName="jiggypage">
               <li className="mainlink">ABOUT</li>
             </Link>
           </ul>
