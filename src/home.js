@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import $ from 'jquery';
+import $ from "jquery";
 
 class Home extends Component {
-
   render() {
-
     $("#menu-holder").hide();
 
     return (
@@ -51,18 +49,6 @@ class Home extends Component {
               />
             </Link>
           </div>
-          <div className="menu-item comic">
-            <Link to="/comic">
-              <img
-                className="menu-pic menu-pic-bottom comic-pic"
-                src="./images/menuComic_bottom.png"
-              />
-              <img
-                className="menu-pic menu-pic-top comic-pic"
-                src="./images/menuComic_top.png"
-              />
-            </Link>
-          </div>
           <div className="menu-item about">
             <Link to="/about">
               <img
@@ -86,35 +72,40 @@ class Home extends Component {
             src="./images/menuSocialMain_top.png"
           />
           <section id="inner-social" className="inner-social-menu">
-            <a href="#" className="social-dot-holder">
+            <a target="_blank"
+              href="https://twitter.com/jiggyart2204"
+              className="social-dot-holder"
+            >
               <div
                 className="social-link social-twitter twitter"
                 id="twitter-dot"
               />
               <p className="social-title">TWITTER</p>
             </a>
-            <a href="#" className="social-dot-holder">
+            <a target="_blank" 
+              href="https://www.instagram.com/jiggyart2204/"
+              className="social-dot-holder"
+            >
               <div
                 className="social-link social-instagram instagram"
                 id="instagram-dot"
               />
               <p className="social-title">INSTAGRAM</p>
             </a>
-            <a href="#" className="social-dot-holder">
+            <a target="_blank" 
+              href="https://www.twitch.tv/jiggyart"
+              className="social-dot-holder"
+            >
               <div
                 className="social-link social-twitch twitch"
                 id="twitch-dot"
               />
               <p className="social-title">TWITCH</p>
             </a>
-            <a href="#" className="social-dot-holder">
-              <div
-                className="social-link social-patreon patreon"
-                id="patreon-dot"
-              />
-              <p className="social-title">PATREON</p>
-            </a>
-            <a href="#" className="social-dot-holder">
+            <a target="_blank" 
+              href="https://www.facebook.com/jiggyart/"
+              className="social-dot-holder"
+            >
               <div
                 className="social-link social-facebook facebook"
                 id="facebook-dot"

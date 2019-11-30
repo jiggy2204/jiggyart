@@ -142,6 +142,7 @@ body {
     main {
       flex: 1;
       margin: 5%;
+      margin-top: 7%;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -374,7 +375,7 @@ body {
 
   #inner-social {
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 20%;
     transition: all 0.25s ease;
 
@@ -448,7 +449,7 @@ body {
     }
 
     #inner-social {
-      top: 10%;
+      top: 15%;
       left: 3%;
 
       .social-link {
@@ -467,7 +468,7 @@ body {
     clip-path: polygon(15% 0%, 100% 0%, 90% 100%, 0% 100%);
 
     .myPic-title {
-      color: $shadowDkRed
+      color: $shadowDkRed;
     }
     .myPic-subtitle {
       color: $accentDkBlue;
@@ -492,7 +493,7 @@ body {
       color: $accentPurple;
     }
 
-    .aboutListItem{
+    .aboutListItem {
       font-size: 1.25em;
     }
   }
@@ -647,5 +648,66 @@ body {
   100% {
     transform: translateX(100%);
     opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  #commissionpage {
+    .customText {
+      font-size: 1.15em;
+    }
+  }
+
+  #aboutpage {
+    .me-text {
+      font-size: 1em;
+    }
+
+    #aboutFooter {
+      padding-left: 20%;
+
+      h3 {
+        font-size: 1.25em;
+      }
+
+      .aboutListItem {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1281px) {
+  #mainpage {
+    #jiggybanner {
+      .bannerBG {
+        height: 55%;
+      }
+
+      .title {
+        top: 150px;
+      }
+    }
+
+    #intro-container {
+      margin-left: 40%;
+      margin-top: 0;
+    }
+
+    .main-menu {
+      position: relative;
+
+      .menu-pic {
+        &.menu-pic-bottom {
+          top: 20px;
+          bottom: 20px;
+        }
+
+        &.menu-pic-top {
+          top: -15px;
+          bottom: -15px;
+        }
+      }
+    }
   }
 }

@@ -25,8 +25,8 @@ class Commission extends Component {
                 className="sketchex comPic"
               ></img>
               <h3 className="comtitle">SKETCH</h3>
-              <p className="comsize">9 x 12 - $10</p>
-              <p className="comsize">11 x 17 - $20</p>
+              <p className="comsize">9 x 12 - $20</p>
+              <p className="comsize">11 x 17 - $30</p>
             </div>
             <div className="lineart-info comInfoMain">
               <img
@@ -34,8 +34,8 @@ class Commission extends Component {
                 className="lineex comPic"
               ></img>
               <h3 className="comtitle">LINEART</h3>
-              <p className="comsize">9 x 12 - $15</p>
-              <p className="comsize">11 x 17 - $25</p>
+              <p className="comsize">9 x 12 - $30</p>
+              <p className="comsize">11 x 17 - $60</p>
             </div>
             <div className="baseColor-info comInfoMain">
               <img
@@ -44,28 +44,28 @@ class Commission extends Component {
               ></img>
               <h3 className="comtitle">COLOR</h3>
               <p className="comsize">9 x 12 - $60</p>
-              <p className="comsize">11 x 17 - $80</p>
+              <p className="comsize">11 x 17 - $120</p>
             </div>
             <div className="colorBG-info comInfoMain">
               <img
                 src="./images/carniverousPlant_lowRes.jpg"
                 className="bgex comPic"
               ></img>
-              <h3 className="comtitle">WITH BACKGROUND</h3>
-              <p className="comsize">9 x 12 - $70</p>
-              <p className="comsize">11 x 17 - $90</p>
+              <h3 className="comtitle">WITH SHADING/BACKGROUND</h3>
+              <p className="comsize">9 x 12 - $80</p>
+              <p className="comsize">11 x 17 - $160</p>
             </div>
           </section>
           <section className="commNotification" id="commNotes">
             <div className="customNotice">
               <p className="customText">
-                If you want a commission in another size other than listed,
-                please contact me about pricing
+                Please use the form for ordering. You will have the option to choose a custom size there.<br/> If you have any questions,
+                please contact me.
               </p>
             </div>
             <div className="commForm">
-              <div className="commButton">FILL OUT THE FORM</div>
-              <div className="commButton">EMAIL FOR CUSTOM ORDER</div>
+              <a className="commButton">FILL OUT THE FORM</a>
+              <a href="mailto:jiggyart2204@gmail.com" className="commButton">EMAIL</a>
             </div>
           </section>
         </main>

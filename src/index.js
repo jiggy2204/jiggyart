@@ -9,7 +9,6 @@ import "react-image-lightbox/style.css";
 import Home from "./home";
 import Works from "./works";
 import Commission from "./commission";
-import Comic from "./comic";
 import About from "./about";
 
 function toggleMenu() {
@@ -21,7 +20,6 @@ const routes = (
     <Route exact path="/" component={Home} />
     <Route path="/works" component={Works} />
     <Route path="/commission" component={Commission} />
-    <Route path="/comic" component={Comic} />
     <Route path="/about" component={About} />
     <div id="menu-holder" className="hamburger" onClick={toggleMenu}>
       <menu className="page-mainmenu" id="pagemenu">
@@ -38,9 +36,6 @@ const routes = (
             </Link>
             <Link to="/commission" activeClassName="jiggypage">
               <li className="mainlink">COMMISSIONS</li>
-            </Link>
-            <Link to="/comic" activeClassName="jiggypage">
-              <li className="mainlink">COMIC</li>
             </Link>
             <Link to="/about" activeClassName="jiggypage">
               <li className="mainlink">ABOUT</li>
