@@ -17,7 +17,7 @@ function toggleMenu() {
 
 const routes = (
   <Router>
-    <Route exact path="/" component={Home} />
+    <Route exact path="/jiggy2204" component={Home} />
     <Route path="/works" component={Works} />
     <Route path="/commission" component={Commission} />
     <Route path="/about" component={About} />
@@ -28,7 +28,7 @@ const routes = (
           <span />
           <span />
           <ul className="pageItems" id="pageItemsAll">
-            <Link to="/" activeClassName="jiggypage">
+            <Link to="/jiggy2204" activeClassName="jiggypage">
               <li className="mainlink">HOME</li>
             </Link>
             <Link to="/works" activeClassName="jiggypage">
