@@ -21,7 +21,7 @@ class Home extends Component {
           <div className="intro-header">WELCOME</div>
           <div className="intro-text">
             Hey Jiggypops! Thanks so much for stopping by! Take a look around
-            the site and drop a line!
+            the site using the icons and drop a line!
           </div>
         </div>
         <div className="main-menu">

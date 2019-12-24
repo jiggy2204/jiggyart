@@ -59,13 +59,22 @@ class Commission extends Component {
           <section className="commNotification" id="commNotes">
             <div className="customNotice">
               <p className="customText">
-                Please use the form for ordering. You will have the option to choose a custom size there.<br/> If you have any questions,
-                please contact me.
+                Please use the form for ordering. You will have the option to
+                choose a custom size there.
+                <br /> If you have any questions, please contact me.
               </p>
             </div>
             <div className="commForm">
-              <a className="commButton">FILL OUT THE FORM</a>
-              <a href="mailto:jiggyart2204@gmail.com" className="commButton">EMAIL</a>
+              <a
+                href="https://forms.gle/p25vaPjrKoN6ific7"
+                target="_blank"
+                className="commButton"
+              >
+                FILL OUT THE FORM
+              </a>
+              <a href="mailto:jiggyart2204@gmail.com" className="commButton">
+                EMAIL
+              </a>
             </div>
           </section>
         </main>

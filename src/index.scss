@@ -11,250 +11,143 @@ $shadowDkRed: #541515;
 $shadowLtRed: #c69dc6;
 
 $accentShadowGrey: #86a1ad;
-@media only screen and (max-width: 1280px) {
-  #mainpage {
-    #jiggybanner {
-      .bannerBG {
-        height: 55%;
-      }
 
-      .title {
-        top: 150px;
-      }
-    }
+body {
+  font-family: "Gibson", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  overflow: hidden !important;
 
-    #intro-container {
-      margin-left: 40%;
-      margin-top: 0;
-    }
-
-    .main-menu {
-      position: relative;
-      margin-top: 3%;
-
-      .menu-pic {
-        &.menu-pic-bottom {
-          top: 20px;
-          bottom: 20px;
-        }
-
-        &.menu-pic-top {
-          top: -15px;
-          bottom: -15px;
-        }
-      }
-    }
+  a {
+    text-decoration: none;
   }
 
-  #workspage {
-    .pageHeader {
-      .pageHeaderImg {
-        height: 45%;
-      }
-    }
-
-    .content-section {
-      margin: 7% -3%;
-    }
-  }
-
-  #aboutpage {
-    .me-text {
-      font-size: 1em;
-    }
-
-    #aboutFooter {
-      padding-left: 20%;
-
-      h3 {
-        font-size: 1.25em;
-      }
-
-      .aboutListItem {
-        font-size: 1em;
-      }
-    }
-  }
-
-  #social-area {
-    position: relative;
-
-    .social-tab {
-      width: 70%;
-
-      &.social-bg {
-        transform: translate(15px, 15px);
-      }
-
-      &.social-front {
-        transform: translate(-20px, -20px);
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 1366px) {
-  #commissionpage {
-    .customText {
-      font-size: 1.15em;
-    }
-  }
-
-  #aboutpage {
-    .me-text {
-      font-size: 1em;
-    }
-
-    #aboutFooter {
-      padding-left: 20%;
-
-      h3 {
-        font-size: 1.25em;
-      }
-
-      .aboutListItem {
-        font-size: 1em;
-      }
-    }
+  ul,
+  li {
+    list-style-type: none;
   }
 }
 
 @media screen and (max-width: 1920px) {
-  body {
-    font-family: "Gibson", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 16px;
-    overflow-x: hidden;
+  .jiggypage {
+    display: block;
+    animation: slideIn 1s;
+  }
 
-    a {
-      text-decoration: none;
-    }
+  #mainpage {
+    display: block;
+    width: 100%;
 
-    ul,
-    li {
-      list-style-type: none;
-    }
+    #jiggybanner {
+      width: 33%;
+      text-align: center;
 
-    .jiggypage {
-      display: block;
-      animation: slideIn 1s;
-    }
-
-    #mainpage {
-      display: block;
-      width: 100%;
-
-      #jiggybanner {
-        width: 33%;
-        text-align: center;
-
-        .title {
-          width: 35%;
-          height: auto;
-          position: relative;
-          top: 200px;
-          margin-left: 15%;
-        }
-
-        .bannerBG {
-          position: absolute;
-          width: 17%;
-          height: 60%;
-          background: $primeLtRed;
-          transform: skewY(20deg);
-          margin-left: 10%;
-          margin-top: -10%;
-        }
-      }
-
-      #intro-container {
-        width: 500px;
+      .title {
+        width: 35%;
         height: auto;
-        margin-left: 50%;
-        margin-top: 2%;
-
-        .intro-header {
-          color: $accentLtBlue;
-          font-size: 7em;
-        }
-
-        .intro-text {
-          color: $accentShadowGrey;
-          font-size: 1.5em;
-          line-height: 35px;
-        }
+        position: relative;
+        top: 200px;
+        margin-left: 15%;
       }
 
-      .main-menu {
-        display: flex;
-        width: 100%;
+      .bannerBG {
+        position: absolute;
+        width: 17%;
+        height: 60%;
+        background: $primeLtRed;
+        transform: skewY(20deg);
         margin-left: 10%;
-        margin-top: 7%;
+        margin-top: -10%;
+      }
+    }
 
-        .menu-item {
-          position: relative;
-          top: 0;
-          left: 0;
+    #intro-container {
+      width: 500px;
+      height: auto;
+      margin-left: 50%;
+      margin-top: 2%;
 
-          &:hover {
-            cursor: pointer;
+      .intro-header {
+        color: $accentLtBlue;
+        font-size: 7em;
+      }
 
-            .menu-pic-top {
-              transform: translate(-20px, -20px);
-            }
+      .intro-text {
+        color: $accentShadowGrey;
+        font-size: 1.5em;
+        line-height: 35px;
+      }
+    }
 
-            .menu-pic-bottom {
-              transform: translate(15px, 15px);
-            }
+    .main-menu {
+      display: flex;
+      width: 100%;
+      margin-left: 10%;
+      margin-top: 7%;
+
+      .menu-item {
+        position: relative;
+        top: 0;
+        left: 0;
+
+        &:hover {
+          cursor: pointer;
+
+          .menu-pic-top {
+            transform: translate(-20px, -20px);
           }
 
-          .menu-pic {
-            width: 75%;
-            height: auto;
-            transition: all 0.25s ease;
+          .menu-pic-bottom {
+            transform: translate(15px, 15px);
+          }
+        }
 
-            &.menu-pic-top {
-              position: relative;
-              top: 0;
-              left: 0;
-            }
+        .menu-pic {
+          width: 75%;
+          height: auto;
+          transition: all 0.25s ease;
 
-            &.menu-pic-bottom {
-              position: absolute;
-              top: 0px;
-              left: 0px;
-            }
+          &.menu-pic-top {
+            position: relative;
+            top: 0;
+            left: 0;
+          }
+
+          &.menu-pic-bottom {
+            position: absolute;
+            top: 0px;
+            left: 0px;
           }
         }
       }
     }
+  }
 
-    //End Main Page
+  //End Main Page
 
-    #workspage,
-    #commissionpage,
-    #comicpage,
-    #aboutpage {
-      width: 100%;
+  #workspage,
+  #commissionpage,
+  #comicpage,
+  #aboutpage {
+    width: 100%;
+    display: flex;
+
+    .pageHeader {
+      flex: 0;
+      margin-left: 5%;
+
+      .header-text {
+        margin-top: 25%;
+        line-height: 1.5em;
+      }
+    }
+
+    main {
+      flex: 1;
+      margin: 5%;
+      margin-top: 7%;
       display: flex;
-
-      .pageHeader {
-        flex: 0;
-        margin-left: 5%;
-
-        .header-text {
-          margin-top: 25%;
-          line-height: 1.5em;
-        }
-      }
-
-      main {
-        flex: 1;
-        margin: 5%;
-        margin-top: 7%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
@@ -756,6 +649,199 @@ $accentShadowGrey: #86a1ad;
     100% {
       transform: translateX(100%);
       opacity: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #mainpage {
+    #jiggybanner {
+      .bannerBG {
+        margin-top: -10%;
+      }
+
+      .title {
+        top: 150px;
+      }
+    }
+
+    #intro-container {
+      margin-left: 45%;
+      margin-top: 0%;
+    }
+
+    .main-menu {
+      margin-top: 5%;
+    }
+
+    #social-area {
+      right: 5%;
+    }
+  }
+
+  #aboutpage {
+    .content-section {
+      margin-top: 6%;
+
+      .me-section,
+      #aboutFooter {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  #commissionpage {
+    .customText {
+      font-size: 1.15em;
+    }
+  }
+
+  #aboutpage {
+    .me-text {
+      font-size: 1em;
+    }
+
+    #aboutFooter {
+      padding-left: 20%;
+
+      h3 {
+        font-size: 1.25em;
+      }
+
+      .aboutListItem {
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  #mainpage {
+    #jiggybanner {
+      .bannerBG {
+        height: 100vh;
+        width: 25%;
+      }
+
+      .title {
+        width: 55%;
+        margin-left: 35%;
+        top: 35vh;
+      }
+    }
+
+    #intro-container {
+      margin-left: 40%;
+      margin-top: -10%;
+
+      .intro-header {
+        font-size: 2.5rem;
+      }
+
+      .intro-text {
+        font-size: 1rem;
+        line-height: 1.25rem;
+      }
+    }
+
+    .main-menu {
+      margin-left: 40vw;
+
+      .menu-item {
+        margin-right: -3%;
+
+        .menu-pic {
+          width: 60%;
+          margin: 0;
+
+          &.menu-pic-bottom {
+            transform: translate(30px, 30px);
+          }
+          &.menu-pic-top {
+            transform: none;
+          }
+
+          &:hover {
+            transform: none;
+          }
+        }
+
+        &:hover {
+          transform: none;
+        }
+      }
+    }
+
+    #social-area {
+      .social-tab {
+        display: none;
+      }
+
+      #inner-social {
+        .social-dot-holder {
+          .social-title {
+            opacity: 1;
+            transform: translate(-150%);
+          }
+        }
+      }
+    }
+  }
+
+  #workspage,
+  #commissionpage,
+  #comicpage,
+  #aboutpage {
+    .content-section {
+      margin-top: 7%;
+    }
+    .pageHeader {
+      .pageHeaderImg {
+        width: 10vw;
+      }
+
+      .header-text {
+        line-height: 1rem;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  #aboutpage {
+    .me-indepth {
+      font-size: 0.8rem;
+    }
+  }
+
+  #commissionpage {
+    .pageHeader {
+      margin-top: -10%;
+    }
+
+    #commissionInfo {
+      .comInfoMain {
+        height: auto;
+
+        .comtitle,
+        .comsize {
+          font-size: 1rem;
+          line-height: 1rem;
+        }
+      }
+    }
+
+    #commNotes {
+      margin: 0;
+      font-size: 1rem;
+
+      .customText {
+        padding: 0;
+        margin: 0;
+        margin-bottom: 3%;
+        font-size: 1rem;
+      }
     }
   }
 }
