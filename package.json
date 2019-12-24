@@ -1,9 +1,12 @@
 {
+  "homepage": ":http://jiggy2204.github.io/jiggyart",
   "name": "jiggyart_website",
   "version": "1.0.0",
   "description": "A site that houses my works and commissions",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag",
     "prebuild": "webpack --mode production --config config/webpack.prod.config.js --env.PLATFORM=production --env.VERSION=stag --progress",
     "build": "node server"
